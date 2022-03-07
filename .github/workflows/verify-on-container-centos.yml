@@ -17,7 +17,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
       fail-fast: false
     steps:
     - name: Install packages
@@ -45,7 +44,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
       fail-fast: false
     steps:
     - name: Install packages
@@ -73,7 +71,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
       fail-fast: false
     steps:
     - name: Install packages
@@ -103,7 +100,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
     steps:
     - name: Install packages
       run: |
@@ -137,7 +133,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
     steps:
     - name: Install packages
       run: |
@@ -167,7 +162,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
     steps:
     - name: Install packages
       run: |
@@ -201,7 +195,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
     steps:
     - name: Install packages
       run: |
@@ -231,7 +224,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
     steps:
     - name: Install packages
       run: |
@@ -266,7 +258,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
     steps:
     - name: Install packages
       run: |
@@ -296,7 +287,6 @@ jobs:
         - ubuntu-20.04
         container:
         - centos:7
-        - centos:8
     steps:
     - name: Install packages
       run: |
