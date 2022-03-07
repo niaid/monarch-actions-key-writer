@@ -97,7 +97,7 @@ function getHomeDirectory(): string
 	const home = process.env[homeEnv];
 	if(home === undefined)
 	{
-		throw Error(`${homeEnv} is not defined`);
+		return "/root";
 	}
 
 	if(home === "/github/home")
