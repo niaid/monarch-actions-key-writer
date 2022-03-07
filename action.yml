@@ -1,7 +1,7 @@
 # https://help.github.com/en/articles/metadata-syntax-for-github-actions
 name: "Install SSH Key"
 description: "Install SSH key in ~/.ssh"
-author: "shimataro"
+author: "niaid"
 branding:
   icon: "terminal"
   color: "gray-dark"

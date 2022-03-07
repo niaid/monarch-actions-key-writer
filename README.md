@@ -32,7 +32,7 @@ PEM(RSA), PKCS8, and RFC4716(OpenSSH) formats are OK.
 runs-on: ubuntu-latest
 steps:
 - name: Install SSH key
-  uses: shimataro/ssh-key-action@v2
+  uses: niaid/monarch-actions-key-writer@v2
   with:
     key: ${{ secrets.SSH_KEY }}
     name: id_rsa # optional
@@ -56,7 +56,7 @@ It is useful for port forwarding.
 runs-on: ubuntu-latest
 steps:
 - name: Install SSH key of bastion
-  uses: shimataro/ssh-key-action@v2
+  uses: niaid/monarch-actions-key-writer@v2
   with:
     key: ${{ secrets.SSH_KEY_OF_BASTION }}
     name: id_rsa-bastion
@@ -67,7 +67,7 @@ steps:
         User user-of-bastion
         IdentityFile ~/.ssh/id_rsa-bastion
 - name: Install SSH key of target
-  uses: shimataro/ssh-key-action@v2
+  uses: niaid/monarch-actions-key-writer@v2
   with:
     key: ${{ secrets.SSH_KEY_OF_TARGET }}
     name: id_rsa-target
@@ -153,23 +153,23 @@ The scripts and documentation in this project are released under the [MIT Licens
 
 See [CHANGELOG.md](CHANGELOG.md).
 
-[image-build]: https://github.com/shimataro/ssh-key-action/workflows/Build/badge.svg?event=push&branch=v2
-[link-build]: https://github.com/shimataro/ssh-key-action/actions/workflows/build.yml
-[image-verify-windows]: https://github.com/shimataro/ssh-key-action/workflows/Windows/badge.svg?event=push&branch=v2
-[link-verify-windows]: https://github.com/shimataro/ssh-key-action/actions/workflows/verify-on-windows.yml
-[image-verify-macos]: https://github.com/shimataro/ssh-key-action/workflows/macOS/badge.svg?event=push&branch=v2
-[link-verify-macos]: https://github.com/shimataro/ssh-key-action/actions/workflows/verify-on-macos.yml
-[image-verify-ubuntu]: https://github.com/shimataro/ssh-key-action/workflows/Ubuntu/badge.svg?event=push&branch=v2
-[link-verify-ubuntu]: https://github.com/shimataro/ssh-key-action/actions/workflows/verify-on-ubuntu.yml
-[image-verify-docker-container-ubuntu]: https://github.com/shimataro/ssh-key-action/actions/workflows/verify-on-container-ubuntu.yml/badge.svg?event=push&branch=v2
-[link-verify-docker-container-ubuntu]: https://github.com/shimataro/ssh-key-action/actions/workflows/verify-on-container-ubuntu.yml
-[image-verify-docker-container-centos]: https://github.com/shimataro/ssh-key-action/actions/workflows/verify-on-container-centos.yml/badge.svg?event=push&branch=v2
-[link-verify-docker-container-centos]: https://github.com/shimataro/ssh-key-action/actions/workflows/verify-on-container-centos.yml
-[image-verify-docker-container-alpine]: https://github.com/shimataro/ssh-key-action/actions/workflows/verify-on-container-alpine.yml/badge.svg?event=push&branch=v2
-[link-verify-docker-container-alpine]: https://github.com/shimataro/ssh-key-action/actions/workflows/verify-on-container-alpine.yml
-[image-release]: https://img.shields.io/github/release/shimataro/ssh-key-action.svg
-[link-release]: https://github.com/shimataro/ssh-key-action/releases
-[image-license]: https://img.shields.io/github/license/shimataro/ssh-key-action.svg
+[image-build]: https://github.com/niaid/monarch-actions-key-writer/workflows/Build/badge.svg?event=push&branch=v2
+[link-build]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/build.yml
+[image-verify-windows]: https://github.com/niaid/monarch-actions-key-writer/workflows/Windows/badge.svg?event=push&branch=v2
+[link-verify-windows]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/verify-on-windows.yml
+[image-verify-macos]: https://github.com/niaid/monarch-actions-key-writer/workflows/macOS/badge.svg?event=push&branch=v2
+[link-verify-macos]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/verify-on-macos.yml
+[image-verify-ubuntu]: https://github.com/niaid/monarch-actions-key-writer/workflows/Ubuntu/badge.svg?event=push&branch=v2
+[link-verify-ubuntu]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/verify-on-ubuntu.yml
+[image-verify-docker-container-ubuntu]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/verify-on-container-ubuntu.yml/badge.svg?event=push&branch=v2
+[link-verify-docker-container-ubuntu]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/verify-on-container-ubuntu.yml
+[image-verify-docker-container-centos]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/verify-on-container-centos.yml/badge.svg?event=push&branch=v2
+[link-verify-docker-container-centos]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/verify-on-container-centos.yml
+[image-verify-docker-container-alpine]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/verify-on-container-alpine.yml/badge.svg?event=push&branch=v2
+[link-verify-docker-container-alpine]: https://github.com/niaid/monarch-actions-key-writer/actions/workflows/verify-on-container-alpine.yml
+[image-release]: https://img.shields.io/github/release/niaid/monarch-actions-key-writer.svg
+[link-release]: https://github.com/niaid/monarch-actions-key-writer/releases
+[image-license]: https://img.shields.io/github/license/niaid/monarch-actions-key-writer.svg
 [link-license]: ./LICENSE
-[image-stars]: https://img.shields.io/github/stars/shimataro/ssh-key-action.svg
-[link-stars]: https://github.com/shimataro/ssh-key-action/stargazers
+[image-stars]: https://img.shields.io/github/stars/niaid/monarch-actions-key-writer.svg
+[link-stars]: https://github.com/niaid/monarch-actions-key-writer/stargazers
