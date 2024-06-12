@@ -14,10 +14,10 @@ jobs:
         - ubuntu-20.04
         - ubuntu-22.04
         docker_image:
-        - alpine:3.10
-        - alpine:3.11
-        - alpine:3.12
-        - alpine:3.13
+        - alpine:3.17
+        - alpine:3.18
+        - alpine:3.19
+        - alpine:3.20
     uses: "./.github/workflows/reusable-verify.yml"
     with:
       os: ${{ matrix.os }}
