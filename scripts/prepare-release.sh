@@ -5,8 +5,8 @@
 set -eu
 
 GITHUB_BASE="https://github.com"
-GITHUB_USER="shimataro"
-GITHUB_REPO="ssh-key-action"
+GITHUB_USER="niaid"
+GITHUB_REPO="monarch-actions-key-writer"
 
 UPSTREAM="origin"
 
