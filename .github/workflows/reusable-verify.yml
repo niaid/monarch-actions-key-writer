@@ -47,7 +47,7 @@ jobs:
         known_hosts: unnecessary
     - name: git clone through SSH
       run: |
-        ssh -vT git@github.com
+        ssh -vT git@github.com || true
         git clone git@github.com:niaid/monarch-actions-key-writer.git tmp
 
   ssh-pkcs8:
@@ -67,7 +67,7 @@ jobs:
         known_hosts: unnecessary
     - name: git clone through SSH
       run: |
-        ssh -vT git@github.com
+        ssh -vT git@github.com || true
         git clone git@github.com:niaid/monarch-actions-key-writer.git tmp
 
   ssh-rfc4716:
@@ -87,7 +87,7 @@ jobs:
         known_hosts: unnecessary
     - name: git clone through SSH
       run: |
-        ssh -vT git@github.com
+        ssh -vT git@github.com || true
         git clone git@github.com:niaid/monarch-actions-key-writer.git tmp
 
   key_if_exists_replace-key_exists:
@@ -113,7 +113,7 @@ jobs:
         if_key_exists: replace
     - name: git clone through SSH
       run: |
-        ssh -vT git@github.com
+        ssh -vT git@github.com || true
         git clone git@github.com:niaid/monarch-actions-key-writer.git tmp
 
   key_if_exists_replace-key_doesnt_exist:
@@ -134,7 +134,7 @@ jobs:
         if_key_exists: replace
     - name: git clone through SSH
       run: |
-        ssh -vT git@github.com
+        ssh -vT git@github.com || true
         git clone git@github.com:niaid/monarch-actions-key-writer.git tmp
 
   key_if_exists_ignore-key_exists:
@@ -160,7 +160,7 @@ jobs:
         if_key_exists: ignore
     - name: git clone through SSH
       run: |
-        ssh -vT git@github.com
+        ssh -vT git@github.com || true
         git clone git@github.com:niaid/monarch-actions-key-writer.git tmp
 
   key_if_exists_ignore-key_doesnt_exist:
@@ -181,7 +181,7 @@ jobs:
         if_key_exists: ignore
     - name: git clone through SSH
       run: |
-        ssh -vT git@github.com
+        ssh -vT git@github.com || true
         git clone git@github.com:niaid/monarch-actions-key-writer.git tmp
 
   key_if_exists_fail-key_exists:
@@ -208,7 +208,7 @@ jobs:
       continue-on-error: true
     - name: git clone through SSH
       run: |
-        ssh -vT git@github.com
+        ssh -vT git@github.com || true
         git clone git@github.com:niaid/monarch-actions-key-writer.git tmp
 
   key_if_exists_fail-key_doesnt_exist:
@@ -229,5 +229,5 @@ jobs:
         if_key_exists: fail
     - name: git clone through SSH
       run: |
-        ssh -vT git@github.com
+        ssh -vT git@github.com || true
         git clone git@github.com:niaid/monarch-actions-key-writer.git tmp
