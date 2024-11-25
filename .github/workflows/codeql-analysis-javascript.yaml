@@ -4,10 +4,10 @@ name: "CodeQL JavaScript/TypeScript"
 
 on:
   push:
-    branches: ["master", "main"]
+    branches: ["master", "main", "develop"]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: ["master", "main"]
+    branches: ["master", "main", "develop"]
   schedule:
     - cron: "27 4 * * 5"
 
@@ -23,7 +23,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: ["javascript"]
+        language: ["typescript"]
 
     steps:
       - name: Checkout repository
